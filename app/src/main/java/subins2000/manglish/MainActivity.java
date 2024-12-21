@@ -22,6 +22,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
+import subins2000.manglish.R;
 import com.google.android.material.navigation.NavigationView;
 
 import android.preference.PreferenceManager;
@@ -153,16 +154,16 @@ public class MainActivity extends AppCompatActivity
             if (activeNavId != id) {
                 activeNavId = id;
                 switch (id) {
-                    case R.id.nav_home:
+                    case 1000030:
                         setFragment(new HomeFragment());
                         return true;
-                    case R.id.nav_overlay_about:
+                    case 1000029:
                         setFragment(new OverlayAboutFragment());
                         return true;
-                    case R.id.nav_about:
+                    case 1000005:
                         setFragment(new AboutFragment());
                         return true;
-                    case R.id.nav_share:
+                    case 10000028:
                         shareApp();
                 }
             }
